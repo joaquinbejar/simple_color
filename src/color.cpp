@@ -5,21 +5,22 @@
 #include "simple_color/color.h"
 
 namespace simple_color {
+
     std::unordered_map<std::string, std::string> color_map = {
-            {"red", sRed},
-            {"green", sGreen},
-            {"yellow", sYellow},
-            {"blue", sBlue},
-            {"magenta", sMagenta},
-            {"cyan", sCyan},
-            {"white", sWhite},
-            {"bred", sBRed},
-            {"bgreen", sBGreen},
-            {"byellow", sBYellow},
-            {"bblue", sBBlue},
+            {"red",      sRed},
+            {"green",    sGreen},
+            {"yellow",   sYellow},
+            {"blue",     sBlue},
+            {"magenta",  sMagenta},
+            {"cyan",     sCyan},
+            {"white",    sWhite},
+            {"bred",     sBRed},
+            {"bgreen",   sBGreen},
+            {"byellow",  sBYellow},
+            {"bblue",    sBBlue},
             {"bmagenta", sBMagenta},
-            {"bcyan", sBCyan},
-            {"bwhite", sBWhite},
+            {"bcyan",    sBCyan},
+            {"bwhite",   sBWhite},
     };
 
     std::string give_color(const std::string &color, const std::string &str) {

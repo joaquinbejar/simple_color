@@ -1,14 +1,12 @@
 cmake_minimum_required(VERSION 3.17)
 
-
-
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(simple_color)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake;${CMAKE_MODULE_PATH}")
 set(SIMPLE_COLOR_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
-message(STATUS "ROOT/COMMON CMAKE_CURRENT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS "SIMPLE_COLOR_INCLUDE ${SIMPLE_COLOR_INCLUDE}")
 
 add_library(simple_color STATIC src/color.cpp)
 target_include_directories(simple_color PUBLIC ${SIMPLE_COLOR_INCLUDE})

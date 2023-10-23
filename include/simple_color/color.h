@@ -529,7 +529,8 @@ namespace simple_color {
     static const std::string Yellow4a = {0x1b, '[', '3', '8', ';', '5', ';', '1', '0', '6', 'm'};
     static const std::string Yellow = {0x1b, '[', '3', '8', ';', '5', ';', '0', '1', '1', 'm'};
 
-    std::string give_color(const Colors &color, const std::string &str);
+//    std::string give_color(const Colors &color, const std::string &str);
+    std::string give_color(const Colors &color, const std::string &str, bool blink = false);
 }
 
 #endif //SIMPLE_COLOR_COLOR_H

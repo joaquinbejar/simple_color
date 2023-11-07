@@ -6,8 +6,9 @@ project(simple_color)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake;${CMAKE_MODULE_PATH}")
 set(SIMPLE_COLOR_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
-message(STATUS "simple_color SIMPLE_COLOR_INCLUDE ${SIMPLE_COLOR_INCLUDE}")
-
+if (CMAKE_DEBUG)
+    message(STATUS "simple_color SIMPLE_COLOR_INCLUDE ${SIMPLE_COLOR_INCLUDE}")
+endif ()
 add_library(simple_color STATIC src/color.cpp)
 target_include_directories(simple_color PUBLIC ${SIMPLE_COLOR_INCLUDE})
 

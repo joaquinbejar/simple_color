@@ -6,7 +6,7 @@ project(simple_color)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake;${CMAKE_MODULE_PATH}")
 set(SIMPLE_COLOR_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
-message(STATUS "SIMPLE_COLOR_INCLUDE ${SIMPLE_COLOR_INCLUDE}")
+message(STATUS "simple_color SIMPLE_COLOR_INCLUDE ${SIMPLE_COLOR_INCLUDE}")
 
 add_library(simple_color STATIC src/color.cpp)
 target_include_directories(simple_color PUBLIC ${SIMPLE_COLOR_INCLUDE})
@@ -14,7 +14,7 @@ target_include_directories(simple_color PUBLIC ${SIMPLE_COLOR_INCLUDE})
 install(TARGETS simple_color DESTINATION lib)
 install(DIRECTORY include/ DESTINATION include)
 
-option(NO_SIMPLE_COLOR_TESTS "Disable Current tests" OFF)
+option(NO_SIMPLE_COLOR_TESTS "simple_color Disable Current tests" OFF)
 
 if (NOT NO_SIMPLE_COLOR_TESTS)
     include(FetchContent)

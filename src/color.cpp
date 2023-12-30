@@ -265,15 +265,6 @@ namespace simple_color {
             {Colors::YELLOW, Yellow}
     };
 
-//    std::string give_color(const Colors &color, const std::string &str) {
-//        auto it = color_map.find(color);
-//        if (it != color_map.end()) {
-//            return it->second + str + Normal;
-//        } else {
-//            return str;
-//        }
-//    }
-
     std::string give_color(const Colors &color, const std::string &str, bool blink) {
         auto it = color_map.find(color);
         if (it != color_map.end()) {

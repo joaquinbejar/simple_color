@@ -19,7 +19,6 @@ option(NO_SIMPLE_COLOR_TESTS "simple_color Disable Current tests" OFF)
 
 if (NOT NO_SIMPLE_COLOR_TESTS)
     include(FetchContent)
-
     FetchContent_Declare(Catch2
             GIT_REPOSITORY https://github.com/catchorg/Catch2.git
             GIT_TAG v3.4.0

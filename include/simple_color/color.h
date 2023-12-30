@@ -267,7 +267,6 @@ namespace simple_color {
         YELLOW4 = 253,
         YELLOW4A = 254,
         YELLOW = 255
-
     };
 
 

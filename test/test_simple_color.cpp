@@ -12,6 +12,13 @@ using namespace simple_color;
 
 TEST_CASE("Test give_color function", "[give_color]") {
 
+    SECTION("Iter over all colors") {
+        for (int i = 0; i <= static_cast<int>(Colors::YELLOW); ++i) {
+            Colors color = static_cast<Colors>(i);
+            std::cout << give_color(color, "Color: " + std::to_string(i)) << std::endl;
+        }
+    }
+
     SECTION("Orange and bright orange should work") {
 
         std::cout << give_color(Colors::DARKORANGE, "DARKORANGE") << std::endl;
@@ -21,13 +28,13 @@ TEST_CASE("Test give_color function", "[give_color]") {
 
         std::cout << simple_color::give_color(simple_color::Colors::WHITE, "[INFO]: ") << std::endl;
 
-        std::cout << simple_color::give_color(simple_color::Colors::LIGHTGOLDENROD1, "[DEBUG]: ") << std::endl;
+        std::cout << simple_color::give_color(simple_color::Colors::SKYBLUE1, "[DEBUG]: ") << std::endl;
 
         std::cout << simple_color::give_color(simple_color::Colors::RED, "[ERROR]: ") << std::endl;
 
         std::cout << simple_color::give_color(simple_color::Colors::MAGENTA, "[EMERGENCY]: ") << std::endl;
 
-        std::cout << simple_color::give_color(simple_color::Colors::LIGHTSEAGREEN, "[ALERT]: ") << std::endl;
+        std::cout << simple_color::give_color(simple_color::Colors::DEEPPINK1A, "[ALERT]: ") << std::endl;
 
         std::cout << simple_color::give_color(simple_color::Colors::LIGHTCORAL, "[CRITICAL]: ", true) << std::endl;
 
@@ -35,4 +42,6 @@ TEST_CASE("Test give_color function", "[give_color]") {
 
         std::cout << simple_color::give_color(simple_color::Colors::LIGHTGREEN, "[NOTICE]: ") << std::endl;
     }
+
+
 }

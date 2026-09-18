@@ -21,7 +21,7 @@ if (NOT NO_SIMPLE_COLOR_TESTS)
     include(FetchContent)
     FetchContent_Declare(Catch2
             GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-            GIT_TAG v3.4.0
+            GIT_TAG v3.16.0
     )
     FETCHCONTENT_GETPROPERTIES(Catch2)
     FETCHCONTENT_MAKEAVAILABLE(Catch2)

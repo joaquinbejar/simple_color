@@ -17,6 +17,12 @@ This library is a simple library to give color to life in c++.
 <!-- related-projects:start -->
 ## Related projects
 
-No other repositories by the same author depend on this project, and it depends on none of them. See all of them at <https://github.com/joaquinbejar?tab=repositories>.
+Repositories by the same author that this project depends on, and repositories that depend on it.
+
+### Used by
+
+| Repository | Description |
+|------------|-------------|
+| [Lightstreamer-lib-client-cpp](https://github.com/joaquinbejar/Lightstreamer-lib-client-cpp) | Lightstreamer C++ client SDK; includes simple_color as a git submodule for colored log output. |
 
 <!-- related-projects:end -->
